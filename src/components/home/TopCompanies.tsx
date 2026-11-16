@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { companies } from "@/data/companies";
 import { jobs } from "@/data/jobs";
 
-import CompanyCard from "@/components/shared/CompanyCard";
+import CompanyCard from "@/components/company/CompanyCard";
 import { Button } from "@/components/ui/button";
 
 export default function TopCompanies() {
