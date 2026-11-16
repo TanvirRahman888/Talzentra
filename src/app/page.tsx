@@ -1,3 +1,4 @@
+import FAQ from "@/components/home/FAQ";
 import FeaturedLatestJobs from "@/components/home/FeaturedLatestJobs";
 import Hero from "@/components/home/Hero";
 import HowItWorks from "@/components/home/HowItWorks";
@@ -16,6 +17,7 @@ export default function Home() {
       <HowItWorks />
       <RecruiterCTA />
       <Testimonials />
+      <FAQ />
     </>
   );
 }
