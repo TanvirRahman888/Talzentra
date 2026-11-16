@@ -5,6 +5,7 @@ export type Job = {
   title: string;
   company: string;
   location: string;
+  category: string;
   workMode: "Remote" | "Hybrid" | "On-site";
   employmentType:
     | "Full-time"
@@ -28,6 +29,7 @@ export const jobs: Job[] = [
     title: "Frontend Developer",
     company: "Arcstone Digital",
     location: "Dhaka, Bangladesh",
+    category: "software-development",
     workMode: "Hybrid",
     employmentType: "Full-time",
     salary: "৳65,000 – ৳95,000 / month",
@@ -43,6 +45,7 @@ export const jobs: Job[] = [
     title: "UI/UX Designer",
     company: "NovaHarbor Studio",
     location: "Chattogram, Bangladesh",
+    category: "design-creative",
     workMode: "Remote",
     employmentType: "Full-time",
     salary: "৳45,000 – ৳70,000 / month",
@@ -58,6 +61,7 @@ export const jobs: Job[] = [
     title: "Backend Developer",
     company: "CodeLume Systems",
     location: "Dhaka, Bangladesh",
+    category: "software-development",
     workMode: "On-site",
     employmentType: "Full-time",
     salary: "৳75,000 – ৳105,000 / month",
@@ -73,6 +77,7 @@ export const jobs: Job[] = [
     title: "Junior React Developer",
     company: "DevCrest Labs",
     location: "Dhaka, Bangladesh",
+    category: "software-development",
     workMode: "Hybrid",
     employmentType: "Full-time",
     salary: "৳35,000 – ৳55,000 / month",
@@ -88,6 +93,7 @@ export const jobs: Job[] = [
     title: "Digital Marketing Executive",
     company: "BrandPeak Media",
     location: "Sylhet, Bangladesh",
+    category: "marketing",
     workMode: "On-site",
     employmentType: "Full-time",
     salary: "৳32,000 – ৳48,000 / month",
@@ -103,6 +109,7 @@ export const jobs: Job[] = [
     title: "Customer Success Associate",
     company: "Clientora",
     location: "Remote, Bangladesh",
+    category: "customer-support",
     workMode: "Remote",
     employmentType: "Full-time",
     skills: ["Communication", "CRM", "Support"],

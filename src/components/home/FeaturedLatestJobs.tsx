@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles, Clock3 } from "lucide-react";
 
 import { jobs } from "@/data/jobs";
-import JobCard from "@/components/job/JobCard";
+import JobCard from "@/components/jobs/JobCard";
 import { Button } from "@/components/ui/button";
 
 export default function FeaturedLatestJobs() {
