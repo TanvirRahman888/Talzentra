@@ -1,4 +1,3 @@
-
 export type Company = {
   id: number;
   slug: string;
@@ -7,6 +6,12 @@ export type Company = {
   location: string;
   size: string;
   description: string;
+  tagline?: string;
+  foundedYear?: number;
+  website?: string;
+  contactEmail?: string;
+  contactPhone?: string;
+  logoUrl?: string;
 };
 
 export const companies: Company[] = [
@@ -17,8 +22,11 @@ export const companies: Company[] = [
     industry: "Information Technology",
     location: "Dhaka, Bangladesh",
     size: "51–200 employees",
-    description:
-      "Building modern digital products and scalable web solutions.",
+    description: "Building modern digital products and scalable web solutions.",
+    tagline: "Building thoughtful digital experiences.",
+    foundedYear: 2019,
+    website: "https://example.com",
+    contactEmail: "careers@example.com",
   },
   {
     id: 2,
@@ -27,8 +35,7 @@ export const companies: Company[] = [
     industry: "Design & Creative",
     location: "Chattogram, Bangladesh",
     size: "11–50 employees",
-    description:
-      "Creating meaningful digital experiences through design.",
+    description: "Creating meaningful digital experiences through design.",
   },
   {
     id: 3,
@@ -37,8 +44,7 @@ export const companies: Company[] = [
     industry: "Software Development",
     location: "Dhaka, Bangladesh",
     size: "51–200 employees",
-    description:
-      "Developing reliable software and cloud-based solutions.",
+    description: "Developing reliable software and cloud-based solutions.",
   },
   {
     id: 4,
@@ -47,8 +53,7 @@ export const companies: Company[] = [
     industry: "Software Development",
     location: "Dhaka, Bangladesh",
     size: "11–50 employees",
-    description:
-      "Helping growing businesses build better technology.",
+    description: "Helping growing businesses build better technology.",
   },
   {
     id: 5,
@@ -57,8 +62,7 @@ export const companies: Company[] = [
     industry: "Marketing & Advertising",
     location: "Sylhet, Bangladesh",
     size: "11–50 employees",
-    description:
-      "Supporting businesses through creative marketing strategies.",
+    description: "Supporting businesses through creative marketing strategies.",
   },
   {
     id: 6,
