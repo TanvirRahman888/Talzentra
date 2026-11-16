@@ -1,4 +1,3 @@
-
 export type Job = {
   id: number;
   slug: string;
@@ -7,16 +6,26 @@ export type Job = {
   location: string;
   category: string;
   workMode: "Remote" | "Hybrid" | "On-site";
-  employmentType:
-    | "Full-time"
-    | "Part-time"
-    | "Internship"
-    | "Contract";
+  employmentType: "Full-time" | "Part-time" | "Internship" | "Contract";
   salary?: string;
   skills: string[];
   description: string;
   postedAt: string;
   featured: boolean;
+  experienceLevel?: string;
+  vacancies?: number;
+  deadline?: string;
+
+  responsibilities?: string[];
+  requirements?: string[];
+  benefits?: string[];
+
+  companyInfo?: {
+    industry: string;
+    size: string;
+    about: string;
+    website?: string;
+  };
 };
 
 // Fictional sample jobs for frontend development.
@@ -38,6 +47,40 @@ export const jobs: Job[] = [
       "Build responsive web interfaces and collaborate with a modern product team.",
     postedAt: "2026-11-13",
     featured: true,
+    experienceLevel: "Mid Level",
+    vacancies: 2,
+    deadline: "2026-12-31",
+
+    responsibilities: [
+      "Build responsive and accessible web interfaces.",
+      "Develop reusable React components.",
+      "Integrate frontend applications with REST APIs.",
+      "Collaborate with designers and backend developers.",
+      "Improve application performance and usability.",
+    ],
+
+    requirements: [
+      "Strong JavaScript and TypeScript knowledge.",
+      "Experience with React and Next.js.",
+      "Understanding of HTML, CSS, and Tailwind CSS.",
+      "Experience integrating REST APIs.",
+      "Familiarity with Git and GitHub.",
+    ],
+
+    benefits: [
+      "Flexible working hours.",
+      "Hybrid work opportunities.",
+      "Professional development support.",
+      "Annual performance review.",
+      "Supportive team environment.",
+    ],
+
+    companyInfo: {
+      industry: "Information Technology",
+      size: "51–200 employees",
+      about:
+        "Arcstone Digital is a fictional technology company used for Talzentra's frontend demonstration.",
+    },
   },
   {
     id: 2,
@@ -66,8 +109,7 @@ export const jobs: Job[] = [
     employmentType: "Full-time",
     salary: "৳75,000 – ৳105,000 / month",
     skills: ["Node.js", "Express", "MongoDB"],
-    description:
-      "Develop secure APIs and maintain scalable backend services.",
+    description: "Develop secure APIs and maintain scalable backend services.",
     postedAt: "2026-11-11",
     featured: true,
   },
